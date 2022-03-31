@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    context = {}
+    context = {'name':'Rekruto', 'message':'Давай дружить'}
     req = request.GET
     name = req.get('name')
     message = req.get('message')
